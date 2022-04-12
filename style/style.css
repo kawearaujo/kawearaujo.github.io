@@ -119,16 +119,11 @@
     cursor: pointer;
     display: none;
 }
-/*Sessão sobre*/
+/*todos codigos similares*/
 section{
     padding: 100px 0;
 }
-
-.about{
-    font-family: 'Roboto', sans-serif;    
-}
-
-.about .title{
+section .title{
     font-family: 'Ubuntu', sans-serif;
     text-align: center;
     font-size: 40px;
@@ -137,15 +132,7 @@ section{
     padding-bottom: 20px;
     position: relative;
 }
-
-.about .about-content{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.about .title::before{
+section .title::before{
     content: "";
     position: absolute;
     bottom: 0;
@@ -155,9 +142,7 @@ section{
     background: #111;
     transform: translateX(-50%);
 }
-
-.about .title::after{
-    content: "Quem sou eu";
+section .title::after{
     position: absolute;
     bottom: -12px;
     left: 50%;
@@ -166,6 +151,22 @@ section{
     color: #00804b;
     padding: 5px;
     transform: translateX(-50%);
+}
+
+/*Sessão sobre*/
+
+.about, .services{
+    font-family: 'Roboto', sans-serif;    
+}
+.about .about-content,
+.services .serv-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.about .title::after{
+    content: "Quem sou eu";
 }
 .about .about-content .left {
     width: 45%;
@@ -208,6 +209,47 @@ section{
     height: 400px;
     object-fit: cover;
     border-radius: 12px;
+}
+/*Sessão de Serviços*/
+.services{
+    background-color: #070a09;
+    color: #fff;
+}
+.services .title::before{
+    background: #fff;
+}
+.services .title::after{
+    background: #111;
+    content: "Que ofereço";
+}
+.services .serv-content .card{
+    width:calc(40% - 10%); 
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.services .serv-content .card .box{
+    transition: all 0.3s ease;
+}
+.services .serv-content .card:hover{
+    background: #00804b;
+}
+.services .serv-content .card:hover .box{
+    transform: scale(1.05);
+}
+.services .serv-content .card ion-icon{
+    font-size: 70px;
+    color: #00804b;
+}
+.services .serv-content .card:hover ion-icon{
+    color: #fff;
+}
+.services .serv-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
 }
 
 /*Responsividade*/
@@ -280,8 +322,13 @@ section{
     .about .about-content .right{
         flex: 100%;
     }
+    .services .serv-content .card{
+        width:calc(50% - 10%);
+        margin-bottom: 50px;
+
+    }
 }
-@media (max-width: 780px){
+@media (max-width: 758px){
     .home .home-content .text-2{
         font-size: 45px;
     }
@@ -290,6 +337,11 @@ section{
     }
     .home .home-content a{
         font-size: 20px;
+    }
+    .services .serv-content .card{
+        width:100%;
+        margin-bottom: 50px;
+
     }
 }
 
