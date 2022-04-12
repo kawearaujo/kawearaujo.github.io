@@ -152,19 +152,20 @@ section .title::after{
     padding: 5px;
     transform: translateX(-50%);
 }
-
-/*Sessão sobre*/
-
-.about, .services{
+.about, .services, .skills{
     font-family: 'Roboto', sans-serif;    
 }
 .about .about-content,
-.services .serv-content{
+.services .serv-content,
+.skills .skills-content{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
+/*Sessão sobre*/
+
+
 .about .title::after{
     content: "Quem sou eu";
 }
@@ -251,7 +252,62 @@ section .title::after{
     font-size: 25px;
     font-weight: 500;
 }
+/*Sessão especialidades*/
+.skills .title::after{
+    content: "Que Faço";
+}
 
+.skills .skills-content .column {
+    width: 40%;
+}
+.skills .skills-content .left .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.skills .skills-content .right .bars{
+    margin-bottom: 15px;
+}
+.skills .skills-content .right .info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.skills .skills-content .right span{
+    font-weight: 500;
+    font-size: 18px;
+}
+.skills .skills-content .right .line{
+    width: 100%;
+    height: 5px;
+    background: #ccc;
+    position: relative;
+}
+.skills .skills-content .right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #00804b;
+}
+.skills .skills-content .right .html::before{
+    width: 63%;
+}.skills .skills-content .right .css::before{
+    width: 74%;
+}.skills .skills-content .right .javascript::before{
+    width: 60%;
+}.skills .skills-content .right .bootstrap::before{
+    width: 51%;
+}.skills .skills-content .right .Jquery::before{
+    width: 54%;
+}.skills .skills-content .right .git::before{
+    width: 34%;
+}.skills .skills-content .right .vue::before{
+    width: 13%;
+}.skills .skills-content .right .react::before{
+    width: 19%;
+}
 /*Responsividade*/
 @media (max-width: 1304px){
     .navbar .max-width{
