@@ -152,7 +152,7 @@ section .title::after{
     padding: 5px;
     transform: translateX(-50%);
 }
-.about, .services, .skills{
+.about, .services, .skills, .pf{
     font-family: 'Roboto', sans-serif;    
 }
 .about .about-content,
@@ -212,14 +212,16 @@ section .title::after{
     border-radius: 12px;
 }
 /*Sessão de Serviços*/
-.services{
+.services, .pf{
     background-color: #070a09;
     color: #fff;
 }
-.services .title::before{
+.services .title::before,
+.pf .title::before{
     background: #fff;
 }
-.services .title::after{
+.services .title::after,
+.pf .title::after{
     background: #111;
     content: "Que ofereço";
 }
@@ -325,7 +327,41 @@ section .title::after{
     width: 13%;
 }.skills .skills-content .right .react::before{
     width: 19%;
+}.skills .skills-content .right .figma::before{
+    width: 45%;
+}.skills .skills-content .right .scrum::before{
+    width: 17%;
 }
+/*  Sessão Portifolio  */
+
+.pf .title::after{
+    content: "Detalhes"
+}
+
+.pf .carousel .card{
+    background: #222;
+    border-radius: 6px;
+    padding: 25px 30px;
+    margin: 0 10px;
+
+}
+.pf .carousel .card img{
+    width: 300px;
+    height: 180px;
+    object-fit:fill;
+    border-radius: 5%;
+    border: 5px solid #00804b;
+}
+.pf .carousel .card .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.pf a{
+    color: #00804b;
+}
+
 /*Responsividade*/
 @media (max-width: 1304px){
     .navbar .max-width{
