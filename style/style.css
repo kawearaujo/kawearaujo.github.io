@@ -400,7 +400,7 @@ section .title::after{
 /*Sessão Contato*/
 
 .contact .contact-content .column{
-    width: calc(50%-30px);
+    width: calc(50% - 30px);
 }
 .contact .contact-content .left p{
     text-align: justify;
