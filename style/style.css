@@ -350,8 +350,8 @@ section .title::after{
     background: #00804b;
 }
 .pf .carousel .card img{
-    width: 246px;
-    height: 130px;
+    width: 100%;
+    height: 100%;
     object-fit:fill;
     border-radius: 5%;
     border: 5px solid #00804b;
