@@ -152,12 +152,13 @@ section .title::after{
     padding: 5px;
     transform: translateX(-50%);
 }
-.about, .services, .skills, .pf{
+.about, .services, .skills, .pf .contact{
     font-family: 'Roboto', sans-serif;    
 }
 .about .about-content,
 .services .serv-content,
-.skills .skills-content{
+.skills .skills-content,
+.contact-content{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -341,24 +342,93 @@ section .title::after{
 .pf .carousel .card{
     background: #222;
     border-radius: 6px;
-    padding: 25px 30px;
+    padding: 25px 35px;
     margin: 0 10px;
+}
 
+.pf .carousel .card:hover{
+    background: #00804b;
 }
 .pf .carousel .card img{
-    width: 300px;
-    height: 180px;
+    width: 246px;
+    height: 130px;
     object-fit:fill;
     border-radius: 5%;
     border: 5px solid #00804b;
+    transition: all 0.3 ease;
+    
+}
+.pf .carousel .card:hover img{
+    border-color: #fff;
 }
 .pf .carousel .card .box{
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     justify-content: center;
+    transition: all 0.6 ease;
+    
+}
+.pf .carousel .card:hover .box{
+    transform: scale(1.05);
 }
 .pf a{
+    color: #00804b;
+}
+
+.owl-dots{
+    text-align: center;
+    margin-top: 20px;
+
+}
+.owl-dot{
+    width: 14px;
+    height: 14px;
+    outline: none !important;
+    border-radius: 50%;
+    border: 2px solid #00804b !important; 
+}
+.owl-dot.active{
+    width: 35px;
+    border-radius: 15px;
+}
+.owl-dot.active, .owl-dot:hover{
+    background: #00804b !important;;
+}
+
+/*Sessão Contato*/
+
+.contact .contact-content .column{
+    width: calc(50%-30px);
+}
+.contact .contact-content .left p{
+    text-align: justify;
+}
+.contact .contact-content .text{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.contact .contact-content .left .icons{
+    margin: 10px 0;
+}
+.contact .contact-content .row{
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+.contact .contact-content .row .info{
+    margin-left: 30px;
+}
+.contact .contact-content .row .info .head{
+    font-weight: 500;
+}
+.contact .contact-content .row .info .sub-title{
+    color: #333;
+}
+.contact .contact-content .row ion-icon{
+    font-size: 25px;
     color: #00804b;
 }
 
@@ -366,18 +436,22 @@ section .title::after{
 @media (max-width: 1304px){
     .navbar .max-width{
         margin-left: 0;
+        
     }
+   
 }
 @media (max-width: 1004px){
     .about .about-content .left img{
         width: 350px;
         height: 350px;
     }
+   
 }
 @media (max-width: 981px){
     .navbar .max-width{
         padding: 0 50px;
     }
+    
 }
 @media (max-width: 944px){
     .max-width{
@@ -388,12 +462,14 @@ section .title::after{
         display: block;
         z-index: 999;
     }
+    
+
     .navbar .menu{
-        display: none;
+
         position: fixed;
         width: 100%;
         height: 100vh;
-        left: 0;
+        left: -100%;
         top: 0;
         background: #070a09;
         padding-top: 80px;
