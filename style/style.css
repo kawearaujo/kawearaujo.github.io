@@ -439,7 +439,7 @@ section .title::after{
 
 /*Sessão Contato*/
 .contact .title::after{
-    content: "Fale conosco"
+    content: "Entre em Contato"
 }
 
 .contact .contact-content .column{
