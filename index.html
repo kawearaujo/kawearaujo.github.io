@@ -9,16 +9,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
 </head>
 <body>
+    <div class="scroll-up-btn">
+        <ion-icon name="chevron-up-outline"></ion-icon>  
+    </div>
     <div class="navbar">
         <div class="max-width">
             <div class="logo"><a href="#">Ka<span>we</span></a></div>
             <ul class="menu">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Serviços</a></li>
-                <li><a href="#">Especialidades</a></li>
-                <li><a href="#">Portfólio</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#services">Serviços</a></li>
+                <li><a href="#skills">Especialidades</a></li>
+                <li><a href="#pf">Portfólio</a></li>
+                <li><a href="#contact">Contato</a></li>
             </ul>
             <div class="menu-btn">
                 <ion-icon name="menu-outline"></ion-icon>
@@ -30,9 +33,9 @@
         <div class="max-width">
             <div class="home-content">
                 <div class="text-1">Ola, meu nome é</div>
-                <div class="text-2">Kawê Semsobrenome</div>
-                <hr>
-                <div class="text-3">Eu sou <span>Freelancer</span></div>
+                <div class="text-2">Kawê Araújo</div>
+                
+                <div class="text-3">E sou <span class="typing"></span></div>
                 <a href="#">Contratar-me</a>
             </div>
         </div>
@@ -47,7 +50,8 @@
                     <img class="perfil" src="assets/img/perfil.png" alt="">
                 </div>
                 <div class="column right">
-                    <div class="text">Sou Kawê Semsobrenome e Sou <span>Freelancer</span></div>
+                    
+                    <div class="text">Sou Kawê Semsobrenome e sou <span class="typing-2"></span></div>
                     <p>Desenvolvedor Front-end, GameDev e Estudante de Eng. de Computação</p>
                     <br><p>Estudante do 9° período do curso de Engenharia de computação da UNIVASF, desenvolvedor de aplicações web utilizando HTML/CSS e Javascript desde 2020; GameDev utilizando Godot e C#/Python desde 2018, iniciando estudos de VueJS, Laravel e Docker.</p>
                     <a href="cv/Curriculum.pdf" target="_blank">Download CV</a>
@@ -81,7 +85,7 @@
                     <div class="box">
                         <ion-icon name="logo-stackoverflow"></ion-icon>
                         <div class="text">FullStack</div>
-                        <p>Uma bela apresentação web, acompanhada de seu coração, back-end com bancos de dados otimizados de busca, insersão, atualização e outros</p>
+                        <p>Uma bela apresentação web, acompanhada de seu coração o back-end com bancos de dados otimizados de busca, insersão, atualização e outros</p>
                     </div>
                 </div>
 
@@ -94,25 +98,15 @@
         <div class="max-width">
             <h2 class="title" >Especialidades</h2>
             <div class="skills-content">
-                <div class="column left">
-                    <div class="text">Minhas habilidades criativas e Experiencias</div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum tempore temporibus laborum blanditiis quod at odit! Sed fuga, natus cum quod maxime doloribus, eum sunt aliquid unde ullam quisquam fugiat!</p>
-                    <a href="#">Mais informações</a>
-                </div>
-                <div class="column right">
+                <div class="column left right">
+                    <div class="text">My Skills<hr></div><br>
                     <div class="bars">
                         <div class="info">
-                            <span>HTML</span>
+                            <span>HTML/CSS</span>
                         </div>
                     </div>    
                 <div class="line html"></div>
-                <div class="bars">
-                    <div class="info">
-                        <span>CSS</span>
-                        
-                    </div>
-                </div>
-                <div class="line css"></div>    
+                
                 <div class="bars">
                     <div class="info">
                         <span>Javascript</span>
@@ -122,62 +116,87 @@
                 <div class="line javascript"></div>
                 <div class="bars">
                     <div class="info">
-                        <span>C#</span>
+                        <span>ReactJS</span>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="line javascript"></div>
+                <div class="bars">
+                    <div class="info">
+                        <span>C# / Python</span>
                         
                     </div>
                 </div>
                 <div class="line javascript"></div>
                 <div class="bars">
                     <div class="info">
-                        <span>Bootstrap</span>
+                        <span>Bootstrap / Jquery</span>
                         
                     </div>
                 </div>
                 <div class="line bootstrap"></div>
                 <div class="bars">
                     <div class="info">
-                        <span>Jquery.js</span>
+                        <span>Figma</span>
                         
                     </div>
                 </div>
                 <div class="line Jquery"></div>
                 <div class="bars">
                     <div class="info">
-                        <span>Git/Github</span>
+                        <span>Illustrator</span>
                         
                     </div>
                 </div>
-                <div class="line git"></div>
-                <div class="bars">
-                    <div class="info">
-                        <span>React.Js</span>
-                        
-                    </div>
+                <div class="line Jquery"></div>
+                
                 </div>
-                <div class="line react"></div>
+
+                <div class="column left right">
+                    <div class="text">Interesses<hr></div><br>
+                    <div class="bars">
+                        <div class="info">
+                            <span>Vue.js</span>
+                        </div>
+                    </div>    
+                <div class="line html"></div>
                 
                 <div class="bars">
                     <div class="info">
-                        <span>Vue.Js</span>
-                        
+                        <span>Flutter / Ionic</span>
+                        <span></span>
                     </div>
                 </div>
-                <div class="line vue"></div>
-
+                <div class="line javascript"></div>
                 <div class="bars">
                     <div class="info">
-                        <span>Figma</span>
+                        <span>Laravel</span>
                         
                     </div>
                 </div>
-                <div class="line figma"></div>
+                <div class="line javascript"></div>
                 <div class="bars">
                     <div class="info">
-                        <span>Scrum</span>
+                        <span>Django</span>
                         
                     </div>
                 </div>
-                <div class="line scrum"></div>
+                <div class="line bootstrap"></div>
+                <div class="bars">
+                    <div class="info">
+                        <span>Postgresql</span>
+                        
+                    </div>
+                </div>
+                <div class="line Jquery"></div>
+                
+                <div class="bars">
+                    <div class="info">
+                        <span>Oracle</span>
+                        
+                    </div>
+                </div>
+                <div class="line Jquery"></div>
 
 
             </div>
@@ -189,7 +208,7 @@
 <!---Sessão Portifolio-->
 <section class="pf" id="pf">
     <div class="max-width">
-        <h2 class="title" >Portfólio</h2>
+        <h2 class="title">Portfólio</h2>
         <div class="pf-content">
         <div class="carousel owl-carousel">
             <div class="card">
@@ -234,6 +253,7 @@
     </div>
 </section>
 
+
 <!---Sessão Contato-->
 <section class="contact" id="contact">
     <div class="max-width">
@@ -241,50 +261,73 @@
         <div class="contact-content">
             <div class="column left">
                 <div class="text">Fale Conosco</div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem amet, consequuntur, assumenda sequi tempora odio pariatur placeat veniam fugiat dolores consequatur? Libero rerum quasi quos, autem accusamus dolor consequuntur eaque!</p>
-            </div>
+                
+            
             <div class="icon">
                 <div class="row">
                     <ion-icon name="person-outline"></ion-icon>
                     <div class="info">
                         <div class="head">Nome</div>
-                        <div class="sut-title">Kawe A. P. Rodrigues</div>
+                        <div class="sub-title">Kawe A. P. Rodrigues</div>
                     </div>
                 </div>
                 <div class="row">
                     <ion-icon name="earth-outline"></ion-icon>
                     <div class="info">
                         <div class="head">Enderço</div>
-                        <div class="sut-title">Petrolina, PE</div>
+                        <div class="sub-title">Petrolina, PE</div>
                     </div>
                 </div>
                 <div class="row">
                     <ion-icon name="earth-outline"></ion-icon>
                     <div class="info">
                         <div class="head">Email</div>
-                        <div class="sut-title">kawe.apr@gmail.com</div>
+                        <div class="sub-title">kawe.apr@gmail.com</div>
                     </div>
                 </div>
-                <div class="row">
-                    <ion-icon name="person-outline"></ion-icon>
-                    <div class="info">
-                        <div class="head">Nome</div>
-                        <div class="sut-title">Kawe Araujo</div>
-                    </div>
-                </div>
+                
+            </div>
             </div>
             <div class="column right">
-                
+                <div class="text">Mensagem</div>
+                <form action="#">
+                    <div class="fields">
+                        <div class="field name">
+                            <input type="text" placeholder="Nome" required>
+                        </div>
+                        <div class="field email">
+                            <input type="email" placeholder="Email" required>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <div class="fields">
+                            <input type="text" placeholder="Sobrenome" required>
+                        </div>
+                        <div class="field textarea">
+                            <textarea cols="30" rows="10" placeholder="Escrever...." required></textarea>
+                        </div>
+                        <div class="button">
+                            <button type="submit">Enviar</button>
+                        </div>
+                    </div>
+
+                </form>
             </div>
         </div>
     </div>
 </section>
-
+<footer>
+    <span> Criado por <a href="#">Kawe Araujo</a>| Todos os direitos reservados 2022</span>
+</footer>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="scripts\script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    
 </body>
 </html>
