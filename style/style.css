@@ -288,11 +288,16 @@ section .title::after{
 }
 .skills .skills-content .right .bars{
     margin-bottom: 15px;
+
 }
-.skills .skills-content .right .info{
+
+.skills .skills-content .column .right .info{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+.skills .info{
+    text-align: center;
 }
 .skills .skills-content .right span{
     font-weight: 500;
@@ -313,25 +318,27 @@ section .title::after{
     background: #00804b;
 }
 .skills .skills-content .right .html::before{
-    width: 63%;
+    width: 100%;
 }.skills .skills-content .right .css::before{
-    width: 74%;
+    width: 100%;
 }.skills .skills-content .right .javascript::before{
-    width: 60%;
+    width: 100%;
+}.skills .skills-content .right .cc ::before{
+    width: 100%;
 }.skills .skills-content .right .bootstrap::before{
-    width: 51%;
+    width: 100%;
 }.skills .skills-content .right .Jquery::before{
-    width: 54%;
+    width: 100%;
 }.skills .skills-content .right .git::before{
-    width: 34%;
+    width: 100%;
 }.skills .skills-content .right .vue::before{
-    width: 13%;
+    width: 100%;
 }.skills .skills-content .right .react::before{
-    width: 19%;
+    width: 100%;
 }.skills .skills-content .right .figma::before{
-    width: 45%;
+    width: 100%;
 }.skills .skills-content .right .scrum::before{
-    width: 17%;
+    width: 100%;
 }
 /*  Sessão Portifolio  */
 
