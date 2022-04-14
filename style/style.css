@@ -251,17 +251,19 @@ section .title::after{
 }
 .services .title::after,
 .pf .title::after{
-    background: #111;
+    background: #070a09;
     content: "Que ofereço";
 }
 .services .serv-content .card{
     width:calc(40% - 10%); 
+    min-height: 35vh;
     background: #222;
     text-align: center;
     border-radius: 6px;
     padding: 20px 25px;
     cursor: pointer;
     transition: all 0.3s ease;
+    
 }
 .services .serv-content .card .box{
     transition: all 0.3s ease;
