@@ -37,6 +37,10 @@
                 
                 <div class="text-3">E sou <span class="typing"></span></div>
                 <a href="#contact">Contratar-me</a>
+                
+            </div>
+            <div class="home-right">
+               
             </div>
         </div>
     </section>
@@ -212,13 +216,19 @@
         <div class="pf-content">
         <div class="carousel owl-carousel">
             <div class="card">
-                <div class="box">
+                <div href="https://naturepage.vercel.app/" target="_blank"  class="box">
                     <a href="https://naturepage.vercel.app/" target="_blank" ><img src="assets/img/nature.PNG" alt=""></a>
                     <a href="https://naturepage.vercel.app/" target="_blank" class="text">Nature</a>
                     <p>Um site desenvolvido para um teste, utilizando tecnologias como:<br> HTML, CSS, Javascript, Jquery. </p>
                 </div>
             </div>
-
+            <div class="card">
+                <div class="box">
+                    <a href="assets/img/games/theCat.gif" target="_blank" ><img src="assets/img/games/theCat.gif" alt=""></a>
+                    <a href="assets/img/games/theCat.gif" target="_blank" >The Cat</a>
+                    <p>Jogo de plataforma, desenvolvido como projeto de disciplina, desenvolvido com o motor gráfico Godot, em desenvolvimento. </p>
+                </div>
+            </div>
             <div class="card">
                 <div class="box">
                     <a href="https://netflix-clone-dpag2rft5-kawearaujo.vercel.app/" target="_blank" ><img src="assets/img/netflix.PNG" alt=""></a>
@@ -226,11 +236,25 @@
                     <p>Clone de uma versão um pouco atrasada da NETFLIX, utilizando tecnologias como: HTML, CSS, Javascript, Jquery. </p>
                 </div>
             </div>
+            <div class="card Vertical">
+                <div class="box">
+                    <a href="assets/img/games/QuizKids.gif" target="_blank" ><img src="assets/img/games/QuizKids.gif" alt=""></a>
+                    <a href="assets/img/games/QuizKids.gif" target="_blank" >Quiz Kids</a>
+                    <p>Protótipo de jogo de Perguntas&Respostas voltada para o aprendizado basico de crianças, com foco em cores, profissões, animais, idiomas e conhecimentos gerais, desenvolvido com o motor gráfico Godot, em desenvolvimento.</p>
+                </div>
+            </div>
             <div class="card">
                 <div class="box">
                     <a href="https://instagram-page-omega.vercel.app/" target="_blank" ><img src="assets/img/instagram.PNG" alt=""></a>
                     <a href="https://instagram-page-omega.vercel.app/" target="_blank" class="text">Instagram Clone</a>
                     <p>Clone da versão web da tela de login do Instagram, utilizando tecnologias como: HTML, CSS. </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="box">
+                    <a href="assets/img/games/Lügg'sQuest.gif" target="_blank" ><img src="assets/img/games/Lügg'sQuest.gif" alt=""></a>
+                    <a href="assets/img/games/Lügg'sQuest.gif" target="_blank" >Lügg's Quest!</a>
+                    <p>Protótipo de jogo de plataforma com movimentação fluida baseada em Orientação a Evento, desenvolvido com o motor gráfico Godot, em desenvolvimento. </p>
                 </div>
             </div>
             <div class="card">
@@ -247,6 +271,8 @@
                     <p>Consumo de API de clima, te informando os indices da sua região, utilizando tecnologias como: HTML, CSS, Javascript e ReactJS. </p>
                 </div>
             </div>
+            
+            
             
         </div>
         </div>
@@ -290,22 +316,22 @@
             </div>
             <div class="column right">
                 <div class="text">Mensagem</div>
-                <form action="#">
+                <form action="scripts/form.php" method="post" name="form">
                     <div class="fields">
                         <div class="field name">
-                            <input type="text" placeholder="Nome" required>
+                            <input type="text" name="nome" placeholder="Nome" required>
                         </div>
                         <div class="field email">
-                            <input type="email" placeholder="Email" required>
+                            <input type="email" name="email" placeholder="Email" required>
                         </div>
                     </div>
 
                     <div class="field">
                         <div class="fields">
-                            <input type="text" placeholder="Sobrenome" required>
+                            <input type="text" name="assunto" placeholder="Assunto" required>
                         </div>
                         <div class="field textarea">
-                            <textarea cols="30" rows="10" placeholder="Escrever...." required></textarea>
+                            <textarea cols="30" rows="10" name="mensagem" placeholder="Escrever...." required></textarea>
                         </div>
                         <div class="button">
                             <button type="submit">Enviar</button>

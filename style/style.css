@@ -8,7 +8,11 @@
 html{
     scroll-behavior: smooth;
 }
+.home .bghex {
+    z-index: 9999;
+}
 .home.bg1{
+    
     background-color: #070a09;
     
 }
@@ -28,7 +32,7 @@ html{
     transition: all 0.3s ease;
 }
 .navbar.sticky{
-    background: #52C9B5;
+    background: #fc7536;
     padding: 15px 0;
 }
 .navbar .max-width{
@@ -42,7 +46,7 @@ html{
     font-weight: 500;
 }
 .navbar .logo a span{
-    color: #52C9B5;
+    color: #fc7536;
     transition: all 0.3 ease;
 }
 .navbar.sticky .logo a span{
@@ -60,7 +64,7 @@ html{
     transition: color 0.3s ease;
 }
 .navbar .menu li a:hover{
-    color: #52C9B5;
+    color: #fc7536;
 }
 .navbar.sticky .menu li a:hover{
     color: #fff;
@@ -69,9 +73,10 @@ html{
 .home{
     display: flex;
     background: url(/assets/img/perfil2.png) no-repeat right ;
-    
-    background-size:100vmax;
-    background-position-y: 10vmin;
+    background-size:43vmax ;
+    background-position-y: 17vmin;
+    background-position-x: 90vmin;
+    /* background-blend-mode:luminosity; */
     height: 100vh;
     color: #fff;
     min-height: 500px;
@@ -94,21 +99,21 @@ html{
     margin: 5px 0;
 }
 .home .home-content .text-3 span{
-    color: #52C9B5;
+    color: #fc7536;
     font-weight: 500;
 }
 .home .home-content a{
     display: inline-block;
-    background: #52C9B5;
+    background: #fc7536;
     color: #fff;
     font-size: 25px;
     padding: 12px 36px;
     margin-top: 20px;
     border-radius: 6px;
-    border: 2px solid #52C9B5;
+    border: 2px solid #fc7536;
 }
 .home .home-content a:hover{
-    color: #52C9B5;
+    color: #fc7536;
     background: none;
 }
 
@@ -131,7 +136,7 @@ html{
     text-align: center;
     line-height: 46px;
     color: #fff;
-    background: #52C9B5;
+    background: #fc7536;
     border-radius: 6px;
     font-size: 30px;
     z-index: 9999;
@@ -176,7 +181,7 @@ section .title::after{
     left: 50%;
     font-size: 20px;
     background: #fff;
-    color: #52C9B5;
+    color: #fc7536;
     padding: 5px;
     transform: translateX(-50%);
 }
@@ -200,9 +205,11 @@ section .title::after{
 }
 .about .about-content .left {
     width: 45%;
+    
 }
 .about .about-content .right {
     width: 55%;
+    align-self: center;
 }
 .about .about-content .right .text{
     font-size: 25px;
@@ -210,7 +217,7 @@ section .title::after{
     margin-bottom: 10px;
 }
 .about .about-content .right .text span{
-    color: #52C9B5;
+    color: #fc7536;
 }
 
 .about .about-content .right p{
@@ -219,18 +226,18 @@ section .title::after{
 
 .about .about-content .right a{
     display: inline-block;
-    background: #52C9B5;
+    background: #fc7536;
     color: #fff;
     font-size: 20px;
     padding: 10px 30px;
     margin-top: 20px;
     border-radius: 6px;
-    border: 2px solid #52C9B5;
+    border: 2px solid #fc7536;
     transition: all 0.3s ease;
 }
 
 .about .about-content .right a:hover{
-    color: #52C9B5;
+    color: #fc7536;
     background: none;
 }
 
@@ -241,6 +248,9 @@ section .title::after{
     border-radius: 12px;
 }
 /*Sessão de Serviços*/
+.services{
+    height: 100%;
+}
 .services, .pf{
     background-color: #070a09;
     color: #fff;
@@ -269,14 +279,14 @@ section .title::after{
     transition: all 0.3s ease;
 }
 .services .serv-content .card:hover{
-    background: #52C9B5;
+    background: #fc7536;
 }
 .services .serv-content .card:hover .box{
     transform: scale(1.05);
 }
 .services .serv-content .card ion-icon{
     font-size: 70px;
-    color: #52C9B5;
+    color: #fc7536;
 }
 .services .serv-content .card:hover ion-icon{
     color: #fff;
@@ -305,17 +315,17 @@ section .title::after{
 }
 .skills .skills-content .left a{
     display: inline-block;
-    background: #52C9B5;
+    background: #fc7536;
     color: #fff;
     font-size: 18px;
     padding: 8px 16px;
     margin-top: 20px;
     border-radius: 6px;
-    border: 2px solid #52C9B5;
+    border: 2px solid #fc7536;
     transition: all 0.3s ease;
 }
 .skills .skills-content .left a:hover{
-    color: #52C9B5;
+    color: #fc7536;
     background: none;
 }
 .skills .skills-content .right .text{
@@ -350,7 +360,7 @@ section .title::after{
     height: 100%;
     top: 0;
     left: 0;
-    background: #52C9B5;
+    background: #fc7536;
 }
 .skills .skills-content .right .html::before{
     width: 100%;
@@ -388,17 +398,29 @@ section .title::after{
     margin: 0 10px;
 }
 
+
 .pf .carousel .card:hover{
-    background: #52C9B5;
+    background: #fc7536;
 }
 .pf .carousel .card img{
     width: 100%;
     height: 100%;
     object-fit:fill;
     border-radius: 5%;
-    border: 5px solid #52C9B5;
+    border: 5px solid #fc7536;
     transition: all 0.3 ease;
     
+}
+.pf .carousel .card.Vertical img{
+    width: 40%;
+    height: 40%;
+    object-fit:fill;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.pf .carousel .card.Vertical .box{
+    align-content: center;
 }
 .pf .carousel .card:hover img{
     border-color: #fff;
@@ -416,9 +438,11 @@ section .title::after{
     transform: scale(1.05);
 }
 .pf a{
-    color: #52C9B5;
+    color: #fc7536;
 }
-
+.pf .carousel .card:hover a{
+    color: #111;
+}
 .owl-dots{
     text-align: center;
     margin-top: 20px;
@@ -429,17 +453,20 @@ section .title::after{
     height: 14px;
     outline: none !important;
     border-radius: 50%;
-    border: 2px solid #52C9B5 !important; 
+    border: 2px solid #fc7536 !important; 
 }
 .owl-dot.active{
     width: 35px;
     border-radius: 15px;
 }
 .owl-dot.active, .owl-dot:hover{
-    background: #52C9B5 !important;;
+    background: #fc7536 !important;;
 }
 
 /*Sessão Contato*/
+.contact{
+    height:  92vh;
+}
 .contact .title::after{
     content: ""
 }
@@ -477,7 +504,7 @@ section .title::after{
 }
 .contact .contact-content .row ion-icon{
     font-size: 25px;
-    color: #52C9B5;
+    color: #fc7536;
 }
 .contact .right form .fields{
     display: flex;
@@ -527,8 +554,8 @@ section .title::after{
 .contact .right form .button button{
     width: 100%;
     height: 100%;
-    border: 2px solid #52C9B5;
-    background: #52C9B5;
+    border: 2px solid #fc7536;
+    background: #fc7536;
     color: #fff;
     font-size: 20px;
     font-weight: 500;
@@ -538,19 +565,22 @@ section .title::after{
 }
 /* sessão */
 .contact .right form .button button:hover{
-    color: #52C9B5;
+    color: #fc7536;
     background: none;
 }
 
 
 footer{
     background: #111;
-    padding: 20px 23px;
+    /* padding: 20px 23px; */
     color: #fff;
     text-align: center;
+    height: 8vh;
+    padding: 3vh 0  ;
+    
 }
 footer span a{
-    color: #52C9B5;
+    color: #fc7536;
     text-decoration: none;
 }
 footer span a:hover{
