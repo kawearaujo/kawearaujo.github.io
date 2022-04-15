@@ -465,7 +465,7 @@ section .title::after{
 
 /*Sessão Contato*/
 .contact{
-    height:  92vh;
+    height:  100%;
 }
 .contact .title::after{
     content: ""
@@ -575,7 +575,7 @@ footer{
     /* padding: 20px 23px; */
     color: #fff;
     text-align: center;
-    height: 8vh;
+    height: 8%;
     padding: 3vh 0  ;
     
 }
