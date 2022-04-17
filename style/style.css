@@ -150,7 +150,14 @@ html{
     pointer-events: auto;
     bottom:30px;
 }
-
+.black{
+    color: black;
+}
+.title2 {
+    font-family: 'Ubuntu', sans-serif;
+    text-align:start;
+    position: relative;
+}
 
 /*todos codigos similares*/
 section{
@@ -275,20 +282,24 @@ section .title::after{
     transition: all 0.3s ease;
     
 }
-.services .serv-content .card .box{
+.services .serv-content .card .box,
+.contact .card{
     transition: all 0.3s ease;
 }
-.services .serv-content .card:hover{
+.services .serv-content .card:hover,
+.card:hover{
     background: #fc7536;
 }
-.services .serv-content .card:hover .box{
+.services .serv-content .card:hover .box,
+.card:hover{
     transform: scale(1.05);
 }
 .services .serv-content .card ion-icon{
     font-size: 70px;
     color: #fc7536;
 }
-.services .serv-content .card:hover ion-icon{
+.services .serv-content .card:hover ion-icon,
+.contact .column .right .card:hover ion-icon{
     color: #fff;
 }
 .services .serv-content .card .text{
@@ -474,11 +485,14 @@ section .title::after{
 .contact .contact-content .column{
     width: calc(50% - 30px);
 }
+
 .contact .contact-content{
     align-items: flex-start;
+    
 }
 .contact .contact-content .left p{
     text-align: justify;
+    
 }
 .contact .contact-content .text{
     font-size: 20px;
@@ -492,6 +506,8 @@ section .title::after{
     display: flex;
     height: 65px;
     align-items: center;
+    /* justify-content:flex-start;
+    padding-left: 40%; */
 }
 .contact .contact-content .row .info{
     margin-left: 30px;
@@ -506,7 +522,19 @@ section .title::after{
     font-size: 25px;
     color: #fc7536;
 }
-.contact .right form .fields{
+.contact .contact-content .card:hover ion-icon{
+    color: #fff;
+}
+
+.contact .card{
+    border-radius: 6px;
+    /* width:40% ; */
+    justify-content:flex-start;
+    padding: 0 6px; 
+}
+ 
+
+/* .contact .right form .fields{
     display: flex;
 }
 
@@ -563,11 +591,11 @@ section .title::after{
     cursor: pointer;
     transition: all 0.3s ease;
 }
-/* sessão */
+
 .contact .right form .button button:hover{
     color: #fc7536;
     background: none;
-}
+} */
 
 
 footer{
