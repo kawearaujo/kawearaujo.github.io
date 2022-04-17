@@ -31,6 +31,13 @@ $(document).ready(function(){
         $('.navbar .menu').toggleClass("active");
         $('.menu-btn i').toggleClass("active");       
     });
+
+    $('.navbar .menu a').click(function(){
+        if(innerWidth<944){
+            $('.navbar .menu').toggleClass("active");
+        }
+    })
+    
     $('.carousel').owlCarousel({
         margin:20,
         loop:true,
